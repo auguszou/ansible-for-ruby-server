@@ -1,0 +1,5 @@
+---
+- hosts: all
+  vars:
+    rvm_rubies: 2.4.1
+  roles: [./]
