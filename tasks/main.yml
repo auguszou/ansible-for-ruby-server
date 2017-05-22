@@ -3,5 +3,5 @@
 - include: mysql.yml
 - include: redis.yml
 - include: rvm.yml
-- include: gemset.yml
+- include: nginx.yml
 

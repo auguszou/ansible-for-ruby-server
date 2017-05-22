@@ -1,2 +1,4 @@
 tmp/
 *.swp
+playbook.retry
+.vagrant

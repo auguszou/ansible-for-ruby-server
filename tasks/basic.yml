@@ -1,12 +1,8 @@
-# Debian, Ubuntu.
-- name: Run the equivalent of "apt-get update" as a separate step
-  apt:
-    update_cache: yes
-
 - name: install apt packages
-  apt: name= state=present
+  apt: name="{{ item }}" state=present update_cache=yes
   with_items:
     - build_essential
+    - git
   when:
     - apt_packages is defined
     - ansible_pkg_mgr == "apt"
